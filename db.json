@@ -1,0 +1,39 @@
+{
+  "contacts": [
+    {
+      "name": "Honey M",
+      "email": "honey@email.com",
+      "number": "0721345678",
+      "image": "https://images.pexels.com/photos/948873/pexels-photo-948873.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "id": 1
+    },
+    {
+      "name": "Optimus Prime",
+      "email": "optimus@email.com",
+      "number": "0722345578",
+      "image": "https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "id": 2
+    },
+    {
+      "name": "Mark Masai",
+      "email": "mark@email.com",
+      "number": "0756432345",
+      "image": "https://images.pexels.com/photos/1047871/pexels-photo-1047871.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "id": 3
+    },
+    {
+      "name": "Pinky Patel",
+      "email": "pinky@email.com",
+      "number": "0764321234",
+      "image": "https://images.pexels.com/photos/798721/pexels-photo-798721.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "id": 4
+    },
+    {
+      "name": "max luther",
+      "email": "mark@email.com",
+      "number": "0789987654",
+      "image": "https://images.pexels.com/photos/6474814/pexels-photo-6474814.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "id": 5
+    }
+  ]
+}
