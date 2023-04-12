@@ -29,6 +29,7 @@ function postContact(){
         .then(data=>{
             console.log(data)
             alert("Contact has been added")
+            form.reset()
         })
         .catch(error=>console.log(error.json()))
     })
@@ -180,6 +181,7 @@ function updateContact(id){
             console.log(data)
             
             alert("Contact has been updated")
+            updateForm.reset()
         })
         .catch(error=>console.log(error))
 
