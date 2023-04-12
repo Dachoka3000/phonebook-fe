@@ -12,7 +12,7 @@ function postContact(){
     form.addEventListener("submit",(e)=>{
         e.preventDefault()
         
-        fetch("https://phonebook-sandy.vercel.app/contacts",{
+        fetch("https://phonebook-server-z5x4.onrender.com/contacts",{
             method:"POST",
             headers:{
                 "Content-type":"application/json"
@@ -30,13 +30,13 @@ function postContact(){
             console.log(data)
             alert("Contact has been added")
         })
-        .catch(error=>console.log(error))
+        .catch(error=>console.log(error.json()))
     })
 }
 
 /**function for getting */
 function getContacts(){
-    fetch("https://phonebook-sandy.vercel.app/contacts")
+    fetch("https://phonebook-server-z5x4.onrender.com/contacts")
     .then(response=>response.json())
     .then(data=>displayContacts(data))
 }
@@ -112,7 +112,7 @@ function displayContacts(contacts){
 getContacts()
 
 function getOneContact(id){
-    fetch(`https://phonebook-sandy.vercel.app/contacts/${id}`)
+    fetch(`https://phonebook-server-z5x4.onrender.com/contacts/${id}`)
     .then(response=>response.json())
     .then(data=>{
         const container = document.getElementById("contactDetails")
@@ -163,7 +163,7 @@ function updateContact(id){
         const numberInput = document.getElementById("updateNumber").value
         const imageInput = document.getElementById("updateImage").value
 
-        fetch(`https://phonebook-sandy.vercel.app/contacts/${id}`, {
+        fetch(`https://phonebook-server-z5x4.onrender.com/contacts/${id}`, {
             method:"PUT",
             headers:{
                 "Content-type":"application/json"
@@ -189,7 +189,7 @@ function updateContact(id){
 }
 
 function deleteQuote(id){
-    fetch(`https://phonebook-sandy.vercel.app/contacts/${id}`,{
+    fetch(`https://phonebook-server-z5x4.onrender.com/contacts/${id}`,{
         method:"DELETE"
     })
     .then(response=>response.json())
